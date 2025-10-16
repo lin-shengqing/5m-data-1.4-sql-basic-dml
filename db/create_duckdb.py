@@ -8,5 +8,6 @@ con = duckdb.connect("db/unit-1-4.db")
 # then store the file (ResaleflatpricesbasedonregistrationdatefromJan2017onwards.csv) in this folder
 
 con.sql(
-    "CREATE TABLE resale_flat_prices_2017 AS SELECT * FROM read_csv_auto('db/ResaleflatpricesbasedonregistrationdatefromJan2017onwards.csv', HEADER=TRUE);"
+    "CREATE TABLE resale_flat_prices_2017_new AS SELECT * FROM read_csv_auto('db/ResaleflatpricesbasedonregistrationdatefromJan2017onwards.csv', HEADER=TRUE);"
 )
+# conda install -c conda-forge duckdb
